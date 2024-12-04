@@ -6,3 +6,4 @@
    <li>Dubai</li>
    <li>New York</li>
 </ul>
+<img src="assets/Capture.JPG">
