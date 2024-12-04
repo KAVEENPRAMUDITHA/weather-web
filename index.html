@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Weather App with Forecast</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading Page -->
+    <div id="loading-page">
+      <div class="loader">
+        <div class="sun"></div>
+        <div class="cloud">
+          <div class="cloud-piece"></div>
+          <div class="cloud-piece"></div>
+          <div class="cloud-piece"></div>
+        </div>
+        <p>Loading Weather...</p>
+      </div>
+    </div>
+
+    <div class="weather-app">
+      <!-- Left Panel -->
+      <div class="left-panel">
+        <h2>Countries</h2>
+        <button onclick="changeCountry('New York')">New York</button>
+        <button onclick="changeCountry('London')">London</button>
+        <button onclick="changeCountry('Tokyo')">Tokyo</button>
+        <button onclick="changeCountry('Colombo')">Colombo</button>
+        <button onclick="changeCountry('Dubai')">Dubai</button>
+      </div>
+
+      <!-- Right Panel -->
+      <div id="right-panel" class="right-panel">
+        <div class="weather-info">
+          <h1 id="city-name">Select a City</h1>
+          <p id="temperature"></p>
+          <p id="description"></p>
+          <p id="wind-speed"></p>
+          <p id="timezone"></p>
+          <img id="weather-icon" src="assets/loading.gif" alt="Weather icon" />
+        </div>
+        <div class="hourly-forecast" id="hourly-forecast">
+          <h2>Hourly Forecast</h2>
+          <div id="forecast-container"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
